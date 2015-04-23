@@ -20,6 +20,7 @@ $(document).ready(function() {
 				event.preventDefault();
 
 				// Show and hide the tabs on click
+                var $this = $(this);
 
 				if ($(this).attr('class') != 'active'){
 					accordion_body.slideUp('normal');
@@ -27,7 +28,11 @@ $(document).ready(function() {
 					accordion_head.removeClass('active');
 					$(this).addClass('active');
 
-}
+                }else {
+                    accordion_body.slideUp(function() {
+                        $this.removeClass('active');
+                    });
+                }
 				
 });
 				accordion_body_a.on('click', function(event) {
