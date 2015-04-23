@@ -11,6 +11,18 @@
 	outline: none;
 }
 
+section {
+	width: 20%;
+	position: :fixed;
+	float: left;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: black;
+	margin-left: 20%;
+	color: white;
+}
+
 /* Width of Menu and background height and color*/
 
 #wrapper-250 {
