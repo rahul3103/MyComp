@@ -27,7 +27,6 @@ $(document).ready(function() {
 					accordion_body.slideUp('normal');
 					$(this).next().stop(true,true).slideToggle('normal');
 					accordion_head.removeClass('active');
-					accordion_body_a.removeClass('active');
 					$(this).addClass('active');
                     accordion_sub_body.slideUp();
 
@@ -65,7 +64,7 @@ $(document).ready(function() {
 				if ($(this).attr('class') != 'active'){
 					
 					$(this).next().stop(true,true).slideToggle('normal');
-					accordion_sub_body_a.removeClass('active');
+					
 					$(this).addClass('active');
 				}else {
                     accordion_sub_body.slideUp(function() {
