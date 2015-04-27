@@ -135,10 +135,10 @@ body {
 .tabs:hover {
   width: 450px;
 }
-.tabs:hover .social-links a:before {
+.tabs:hover .social-links span:before {
   margin-left: -100px;
 }
-.tabs:hover .social-links a:after {
+.tabs:hover .social-links span:after {
   margin-left: -5px;
 }
 .tabs .paragraph {
@@ -162,13 +162,13 @@ body {
 .social-links {
   display: block;
 }
-.social-links a {
+.social-links span {
   display: block;
   text-indent: -9999px;
   font-size: 0;
   line-height: 0;
 }
-.social-links a:before, .social-links a:after {
+.social-links span:before, .social-links span:after {
   -moz-transition: all 0.4s 0.1s ease-in-out;
   -o-transition: all 0.4s 0.1s ease-in-out;
   -webkit-transition: all 0.4s 0.1s;
@@ -181,74 +181,74 @@ body {
   padding-top: 90px;
   padding-left: 25px;
   display: block;
-  font: normal 30px Genericons;
+  font: normal 30px Arial, sans-serif;
   color: #fff;
 }
-.social-links a:after {
+.social-links span:after {
   font-size: 48px;
   padding-left: 20px;
   padding-top: 80px;
   margin-left: 85px;
 }
 
-.twitter-icon a:before, .twitter-icon a:after {
-  content: '\f202';
+.twitter-icon span:before, .twitter-icon span:after {
+  content: '1.';
 }
-.twitter-icon a:after {
+.twitter-icon span:after {
   background-image: -moz-linear-gradient(#7adcf9, #4bc9f5);
   background-image: -webkit-linear-gradient(#7adcf9, #4bc9f5);
   background-image: linear-gradient(#7adcf9, #4bc9f5);
 }
 
-.facebook-icon a:before, .facebook-icon a:after {
-  content: '\f204';
+.facebook-icon span:before, .facebook-icon span:after {
+  content: '2.';
 }
-.facebook-icon a:after {
+.facebook-icon span:after {
   background-image: -moz-linear-gradient(#548abf, #295b9e);
   background-image: -webkit-linear-gradient(#548abf, #295b9e);
   background-image: linear-gradient(#548abf, #295b9e);
 }
 
-.linkedin-icon a:before, .linkedin-icon a:after {
-  content: '\f208';
+.linkedin-icon span:before, .linkedin-icon span:after {
+  content: '3.';
 }
-.linkedin-icon a:after {
+.linkedin-icon span:after {
   background-image: -moz-linear-gradient(#00a9cd, #0083b4);
   background-image: -webkit-linear-gradient(#00a9cd, #0083b4);
   background-image: linear-gradient(#00a9cd, #0083b4);
 }
 
-.insta-icon a:before, .insta-icon a:after {
-  content: '\f215';
+.insta-icon span:before, .insta-icon span:after {
+  content: '4.';
 }
-.insta-icon a:after {
+.insta-icon span:after {
   background-image: -moz-linear-gradient(#7fc121, #298733);
   background-image: -webkit-linear-gradient(#7fc121, #298733);
   background-image: linear-gradient(#7fc121, #298733);
 }
 
-.youtube-icon a:before, .youtube-icon a:after {
-  content: '\f213';
+.youtube-icon span:before, .youtube-icon span:after {
+  content: '5.';
 }
-.youtube-icon a:after {
+.youtube-icon span:after {
   background-image: -moz-linear-gradient(#df192a, #c41222);
   background-image: -webkit-linear-gradient(#df192a, #c41222);
   background-image: linear-gradient(#df192a, #c41222);
 }
 
-.tumblr-icon a:before, .tumblr-icon a:after {
-  content: '\f214';
+.tumblr-icon span:before, .tumblr-icon span:after {
+  content: '6.';
 }
-.tumblr-icon a:after {
+.tumblr-icon span:after {
   background-image: -moz-linear-gradient(#283e56, #325372);
   background-image: -webkit-linear-gradient(#283e56, #325372);
   background-image: linear-gradient(#283e56, #325372);
 }
 
-.dribbble-icon a:before, .dribbble-icon a:after {
-  content: '\f201';
+.dribbble-icon span:before, .dribbble-icon span:after {
+  content: '7.';
 }
-.dribbble-icon a:after {
+.dribbble-icon span:after {
   background-image: -moz-linear-gradient(#e03a70, #f189b8);
   background-image: -webkit-linear-gradient(#e03a70, #f189b8);
   background-image: linear-gradient(#e03a70, #f189b8);
