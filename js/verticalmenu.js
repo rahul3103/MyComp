@@ -27,6 +27,7 @@ $(document).ready(function() {
 					accordion_body.slideUp('normal');
 					$(this).next().stop(true,true).slideToggle('normal');
 					accordion_head.removeClass('active');
+					accordion_body_a.removeClass('active');
 					$(this).addClass('active');
                     accordion_sub_body.slideUp();
 

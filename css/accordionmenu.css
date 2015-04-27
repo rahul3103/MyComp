@@ -11,17 +11,251 @@
 	outline: none;
 }
 
-section {
-	width: 20%;
-	position: :fixed;
-	float: left;
-	top: 0;
-	left: 0;
-	height: 100%;
-	background-color: black;
-	margin-left: 20%;
-	color: white;
+/* Horizontal */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Variables */
+body {
+  background: #f77462;
+  font-family: Lato, sans-serif;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="genericon"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Genericons';
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+}
+
+/* IE7 */
+[class*="genericon"] {
+  *overflow: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+.h_accordion {
+  background: #5ab2ca;
+  width: 80%;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 300px;
+  font-size: 0;
+  margin-left: 20%;
+}
+
+.tabs {
+  display: inline-block;
+  background-color: #6dc5dd;
+  border-right: #5ab2ca 1px solid;
+  width: 80px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  -moz-transition: all 0.4s 0.1s ease-in-out;
+  -o-transition: all 0.4s 0.1s ease-in-out;
+  -webkit-transition: all 0.4s 0.1s;
+  -webkit-transition-delay: ease-in-out;
+  transition: all 0.4s 0.1s ease-in-out;
+}
+.tabs:hover {
+  width: 450px;
+}
+.tabs:hover .social-links a:before {
+  margin-left: -100px;
+}
+.tabs:hover .social-links a:after {
+  margin-left: -5px;
+}
+.tabs .paragraph {
+  position: relative;
+  width: 360px;
+  margin-left: 80px;
+  padding: 50px 0 0 10px;
+  height: 300px;
+  background: #fff;
+}
+.tabs .paragraph h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.tabs .paragraph p {
+  font-size: 0.88em;
+  line-height: 1.5em;
+  padding-right: 30px;
+}
+
+.social-links {
+  display: block;
+}
+.social-links a {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+}
+.social-links a:before, .social-links a:after {
+  -moz-transition: all 0.4s 0.1s ease-in-out;
+  -o-transition: all 0.4s 0.1s ease-in-out;
+  -webkit-transition: all 0.4s 0.1s;
+  -webkit-transition-delay: ease-in-out;
+  transition: all 0.4s 0.1s ease-in-out;
+  width: 80px;
+  height: 300px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+  color: #fff;
+}
+.social-links a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+.twitter-icon a:before, .twitter-icon a:after {
+  content: '\f202';
+}
+.twitter-icon a:after {
+  background-image: -moz-linear-gradient(#7adcf9, #4bc9f5);
+  background-image: -webkit-linear-gradient(#7adcf9, #4bc9f5);
+  background-image: linear-gradient(#7adcf9, #4bc9f5);
+}
+
+.facebook-icon a:before, .facebook-icon a:after {
+  content: '\f204';
+}
+.facebook-icon a:after {
+  background-image: -moz-linear-gradient(#548abf, #295b9e);
+  background-image: -webkit-linear-gradient(#548abf, #295b9e);
+  background-image: linear-gradient(#548abf, #295b9e);
+}
+
+.linkedin-icon a:before, .linkedin-icon a:after {
+  content: '\f208';
+}
+.linkedin-icon a:after {
+  background-image: -moz-linear-gradient(#00a9cd, #0083b4);
+  background-image: -webkit-linear-gradient(#00a9cd, #0083b4);
+  background-image: linear-gradient(#00a9cd, #0083b4);
+}
+
+.insta-icon a:before, .insta-icon a:after {
+  content: '\f215';
+}
+.insta-icon a:after {
+  background-image: -moz-linear-gradient(#7fc121, #298733);
+  background-image: -webkit-linear-gradient(#7fc121, #298733);
+  background-image: linear-gradient(#7fc121, #298733);
+}
+
+.youtube-icon a:before, .youtube-icon a:after {
+  content: '\f213';
+}
+.youtube-icon a:after {
+  background-image: -moz-linear-gradient(#df192a, #c41222);
+  background-image: -webkit-linear-gradient(#df192a, #c41222);
+  background-image: linear-gradient(#df192a, #c41222);
+}
+
+.tumblr-icon a:before, .tumblr-icon a:after {
+  content: '\f214';
+}
+.tumblr-icon a:after {
+  background-image: -moz-linear-gradient(#283e56, #325372);
+  background-image: -webkit-linear-gradient(#283e56, #325372);
+  background-image: linear-gradient(#283e56, #325372);
+}
+
+.dribbble-icon a:before, .dribbble-icon a:after {
+  content: '\f201';
+}
+.dribbble-icon a:after {
+  background-image: -moz-linear-gradient(#e03a70, #f189b8);
+  background-image: -webkit-linear-gradient(#e03a70, #f189b8);
+  background-image: linear-gradient(#e03a70, #f189b8);
+}
+
+
+
 
 /* Width of Menu and background height and color*/
 
