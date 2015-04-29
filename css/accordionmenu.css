@@ -202,6 +202,7 @@ body {
 
 .facebook-icon span:before, .facebook-icon span:after {
   content: '2.';
+
 }
 .facebook-icon span:after {
   background-image: -moz-linear-gradient(#548abf, #295b9e);
