@@ -8,6 +8,7 @@ $(document).ready(function() {
 				accordion_sub_body = $('.sub-sub-menu'),
 				accordion_sub_body_a = $('.accordion .sub-menu .sub-sub-menu > li > a');
 
+			$("#body-part").css("padding-left", ($("#wrapper-250").width() + 10));
 			// Open the first tab on load
 
 			accordion_head.first().addClass('active').next().slideDown('normal');
