@@ -11,22 +11,34 @@
 	outline: none;
 }
 
-/* Width of Menu and background height and color*/
 
-#body-part {height: 100%;
 
+.content {
+	 position: relative;
+  	 width: 83%;
+  	 height: 800px;
+  	 margin: 0px auto;
+  	 margin-left: 17%;
 }
 
+.fake {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17%;
+}
+
+/* Width of Menu and background height and color*/
+
 #wrapper-250 {
-	width:20%;
-	min-width: 200px;
+	width: 17%;
+	
 	position: fixed;
 	float: left;
-	margin-left: 0px;
-	margin-top: 0px;
+	
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: 800px;
 	background-color: #0080FF;
 }
 
@@ -40,7 +52,7 @@
 .accordion li > a {
 	display: block;
 	position: relative;
-	min-width: 110px;
+	
 	padding: 0 10px 0 40px;
 	height: 32px;
 
