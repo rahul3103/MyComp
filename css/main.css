@@ -1,0 +1,21 @@
+.content {
+	 position: relative;
+  	 width: 83%;
+  	 height: 800px;
+  	 margin: 0px auto;
+  	 margin-left: 17%;
+}
+
+.fake {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17%;
+}
+
+div > p > img {
+	height: 280px;
+	width: 180px;
+	float: right;
+	margin: 0px 15px 15px 0px;
+}

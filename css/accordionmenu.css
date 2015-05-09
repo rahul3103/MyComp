@@ -11,34 +11,15 @@
 	outline: none;
 }
 
-
-
-.content {
-	 position: relative;
-  	 width: 83%;
-  	 height: 800px;
-  	 margin: 0px auto;
-  	 margin-left: 17%;
-}
-
-.fake {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 17%;
-}
-
 /* Width of Menu and background height and color*/
 
 #wrapper-250 {
 	width: 17%;
-	
 	position: fixed;
 	float: left;
-	
 	top: 0;
 	left: 0;
-	height: 800px;
+	height: 100%;
 	background-color: #0080FF;
 }
 
